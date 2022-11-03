@@ -1,0 +1,432 @@
+#BG {
+	position: absolute;
+	top: 0.0px;
+	left: 0.0px;
+	width: 1024.0px;
+	height: 768.0px;
+	z-index: 0;
+}
+#AN_BOX_SADNESS {
+	position: absolute;
+	top: 341.0px;
+	left: 89.5px;
+	width: 280.5px;
+	height: 276.5px;
+	z-index: 1;
+}
+#AN_SADNESS {
+	position: absolute;
+	top: 182.5px;
+	left: 90.0px;
+	width: 279.5px;
+	height: 345.0px;
+	z-index: 2;
+}
+#AN_BTN_01 {
+	position: absolute;
+	top: 579.5px;
+	left: 196.5px;
+	width: 61.5px;
+	height: 61.5px;
+	z-index: 3;
+}
+#AN_BOX_TOY {
+	position: absolute;
+	top: 341.0px;
+	left: 377.0px;
+	width: 280.5px;
+	height: 276.5px;
+	z-index: 4;
+}
+#AN_TOY {
+	position: absolute;
+	top: 157.5px;
+	left: 367.0px;
+	width: 290.5px;
+	height: 355.5px;
+	z-index: 5;
+}
+#AN_BTN_02 {
+	position: absolute;
+	top: 579.5px;
+	left: 484.0px;
+	width: 61.5px;
+	height: 61.5px;
+	z-index: 6;
+}
+#AN_BOX_VANELOPE {
+	position: absolute;
+	top: 341.0px;
+	left: 667.5px;
+	width: 280.5px;
+	height: 276.5px;
+	z-index: 7;
+}
+#AN_VANELOPE {
+	position: absolute;
+	top: 174.0px;
+	left: 715.0px;
+	width: 154.0px;
+	height: 300.5px;
+	z-index: 8;
+}
+#AN_BTN_03 {
+	position: absolute;
+	top: 579.5px;
+	left: 774.5px;
+	width: 61.5px;
+	height: 61.5px;
+	z-index: 9;
+}
+#AN_LOGO {
+	position: absolute;
+	top: 55.5px;
+	left: 61.5px;
+	width: 161.0px;
+	height: 86.5px;
+	z-index: 10;
+}
+#AN_TXT {
+	position: absolute;
+	top: 85.5px;
+	left: 245.5px;
+	width: 136.5px;
+	height: 27.0px;
+	z-index: 11;
+}
+#AN_BTN_NEXT {
+	position: absolute;
+	top: 683.0px;
+	left: 823.5px;
+	width: 119.5px;
+	height: 27.0px;
+	z-index: 12;
+}
+#AN_BTN_PREV {
+	position: absolute;
+	top: 683.0px;
+	left: 665.0px;
+	width: 91.5px;
+	height: 27.0px;
+	z-index: 13;
+}
+#AN_LEGENDAS {
+	position: absolute;
+	top: 683.0px;
+	left: 84.0px;
+	width: 463.5px;
+	height: 27.0px;
+	z-index: 14;
+}
+#AN_BTN_POP {
+	position: absolute;
+	top: 71.5px;
+	left: 909.5px;
+	width: 52.0px;
+	height: 52.0px;
+	z-index: 15;
+}
+#POP_REF_BG {
+	position: absolute;
+	top: 0.0px;
+	left: 0.0px;
+	width: 1024.0px;
+	height: 768.0px;
+	z-index: 16;
+}
+#POP_REF_CNTT {
+	position: absolute;
+	top: 55.5px;
+	left: 90.0px;
+	width: 867.0px;
+	height: 629.5px;
+	z-index: 17;
+}
+#POP_REF_BTN_CLS {
+	position: absolute;
+	top: 84.0px;
+	left: 892.0px;
+	width: 48.5px;
+	height: 48.5px;
+	z-index: 18;
+}
+#POP_SADNESS_BG {
+	position: absolute;
+	top: 0.0px;
+	left: 0.0px;
+	width: 1024.0px;
+	height: 768.0px;
+	z-index: 19;
+}
+#POP_SADNESS_AN_LOGO {
+	position: absolute;
+	top: 55.5px;
+	left: 61.5px;
+	width: 161.0px;
+	height: 86.5px;
+	z-index: 20;
+}
+#POP_SADNESS_AN_TXT_01 {
+	position: absolute;
+	top: 85.5px;
+	left: 245.5px;
+	width: 136.5px;
+	height: 27.0px;
+	z-index: 21;
+}
+#POP_SADNESS_AN_LEGENDAS {
+	position: absolute;
+	top: 683.0px;
+	left: 84.0px;
+	width: 463.5px;
+	height: 27.0px;
+	z-index: 22;
+}
+#POP_SADNESS_AN_BTN_CLS {
+	position: absolute;
+	top: 71.5px;
+	left: 909.5px;
+	width: 52.0px;
+	height: 52.0px;
+	z-index: 23;
+}
+#POP_SADNESS_AN_TXT {
+	position: absolute;
+	top: 252.0px;
+	left: 402.5px;
+	width: 581.0px;
+	height: 150.0px;
+	z-index: 24;
+}
+#POP_SADNESS_AN_LEGENDAS_01 {
+	position: absolute;
+	top: 174.0px;
+	left: 404.0px;
+	width: 158.0px;
+	height: 54.5px;
+	z-index: 25;
+}
+#POP_SADNESS_AN_SADNESS {
+	position: absolute;
+	top: 154.0px;
+	left: 6.0px;
+	width: 413.5px;
+	height: 516.5px;
+	z-index: 26;
+}
+#POP_SADNESS_AN_CENA_01 {
+	position: absolute;
+	top: 403.0px;
+	left: 401.5px;
+	width: 221.5px;
+	height: 99.5px;
+	z-index: 27;
+}
+#POP_SADNESS_AN_CENA_02 {
+	position: absolute;
+	top: 402.0px;
+	left: 636.0px;
+	width: 202.0px;
+	height: 105.5px;
+	z-index: 28;
+}
+#POP_SADNESS_AN_CENA_03 {
+	position: absolute;
+	top: 402.0px;
+	left: 851.0px;
+	width: 141.5px;
+	height: 105.5px;
+	z-index: 29;
+}
+#POP_SADNESS_AN_LOGO_01 {
+	position: absolute;
+	top: 605.0px;
+	left: 777.0px;
+	width: 170.0px;
+	height: 117.0px;
+	z-index: 30;
+}
+#POP_TOY_BG {
+	position: absolute;
+	top: 0.0px;
+	left: 0.0px;
+	width: 1024.0px;
+	height: 768.0px;
+	z-index: 31;
+}
+#POP_TOY_AN_LOGO {
+	position: absolute;
+	top: 55.5px;
+	left: 61.5px;
+	width: 161.0px;
+	height: 86.5px;
+	z-index: 32;
+}
+#POP_TOY_AN_TXT_01 {
+	position: absolute;
+	top: 85.5px;
+	left: 245.5px;
+	width: 136.5px;
+	height: 27.0px;
+	z-index: 33;
+}
+#POP_TOY_AN_LEGENDAS {
+	position: absolute;
+	top: 683.0px;
+	left: 84.0px;
+	width: 463.5px;
+	height: 27.0px;
+	z-index: 34;
+}
+#POP_TOY_AN_BTN_CLS {
+	position: absolute;
+	top: 71.5px;
+	left: 909.5px;
+	width: 52.0px;
+	height: 52.0px;
+	z-index: 35;
+}
+#POP_TOY_AN_TXT {
+	position: absolute;
+	top: 248.5px;
+	left: 402.5px;
+	width: 581.0px;
+	height: 150.0px;
+	z-index: 36;
+}
+#POP_TOY_AN_LEGENDAS_01 {
+	position: absolute;
+	top: 174.0px;
+	left: 404.0px;
+	width: 149.5px;
+	height: 54.5px;
+	z-index: 37;
+}
+#POP_TOY_AN_TOY {
+	position: absolute;
+	top: 174.0px;
+	left: 22.5px;
+	width: 400.5px;
+	height: 490.0px;
+	z-index: 38;
+}
+#POP_TOY_AN_CENA_01 {
+	position: absolute;
+	top: 398.5px;
+	left: 411.0px;
+	width: 185.0px;
+	height: 104.0px;
+	z-index: 39;
+}
+#POP_TOY_AN_CENA_02 {
+	position: absolute;
+	top: 398.5px;
+	left: 611.5px;
+	width: 184.0px;
+	height: 103.5px;
+	z-index: 40;
+}
+#POP_TOY_AN_CENA_03 {
+	position: absolute;
+	top: 398.5px;
+	left: 811.0px;
+	width: 173.5px;
+	height: 104.0px;
+	z-index: 41;
+}
+#POP_TOY_AN_LOGO_01 {
+	position: absolute;
+	top: 575.5px;
+	left: 777.5px;
+	width: 184.0px;
+	height: 134.5px;
+	z-index: 42;
+}
+#POP_VANELOPE_BG {
+	position: absolute;
+	top: 0.0px;
+	left: 0.0px;
+	width: 1024.0px;
+	height: 768.0px;
+	z-index: 43;
+}
+#POP_VANELOPE_AN_LOGO {
+	position: absolute;
+	top: 55.5px;
+	left: 61.5px;
+	width: 161.0px;
+	height: 86.5px;
+	z-index: 44;
+}
+#POP_VANELOPE_AN_TXT_01 {
+	position: absolute;
+	top: 85.5px;
+	left: 245.5px;
+	width: 136.5px;
+	height: 27.0px;
+	z-index: 45;
+}
+#POP_VANELOPE_AN_LEGENDAS {
+	position: absolute;
+	top: 683.0px;
+	left: 84.0px;
+	width: 463.5px;
+	height: 27.0px;
+	z-index: 46;
+}
+#POP_VANELOPE_AN_BTN_CLS {
+	position: absolute;
+	top: 71.5px;
+	left: 909.5px;
+	width: 52.0px;
+	height: 52.0px;
+	z-index: 47;
+}
+#POP_VANELOPE_AN_TXT {
+	position: absolute;
+	top: 248.5px;
+	left: 402.5px;
+	width: 581.0px;
+	height: 150.0px;
+	z-index: 48;
+}
+#POP_VANELOPE_AN_LEGENDAS_01 {
+	position: absolute;
+	top: 174.0px;
+	left: 403.5px;
+	width: 142.5px;
+	height: 54.5px;
+	z-index: 49;
+}
+#POP_VANELOPE_AN_VANELOPE {
+	position: absolute;
+	top: 142.0px;
+	left: 84.0px;
+	width: 265.5px;
+	height: 518.5px;
+	z-index: 50;
+}
+#POP_VANELOPE_AN_LOGO_01 {
+	position: absolute;
+	top: 571.0px;
+	left: 666.0px;
+	width: 400.0px;
+	height: 155.0px;
+	z-index: 51;
+}
+#POP_VANELOPE_AN_CENA_01 {
+	position: absolute;
+	top: 384.0px;
+	left: 731.5px;
+	width: 248.0px;
+	height: 165.0px;
+	z-index: 52;
+}
+#POP_VANELOPE_AN_CENA_02 {
+	position: absolute;
+	top: 384.0px;
+	left: 387.5px;
+	width: 327.5px;
+	height: 165.0px;
+	z-index: 53;
+}

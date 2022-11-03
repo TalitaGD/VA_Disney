@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Disney_BR_pt_Disney_Talita_V1_01_Capa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../shared/menu/menu.css" rel="stylesheet" type="text/css"/>
+	<link href="../shared/css/style.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" charset="utf-8" src="../shared/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/jquery.gsap.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/TweenMax.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/veeva-library.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Initiate Menu
+			initMenu();
+
+			// Main Timeline
+			var tl = new TimelineMax();
+			tl.play()
+			.to($("#animate, #popups, #menu"), 		.3, { css:{ opacity: 1 } }, 0.3)
+			.from($("#AN_BTN_INICIAR"), 			.3, { css:{ opacity: 0, scale: .8 } }, "-=.2")
+			.from($("#AN_LOGO"), 					.3, { css:{ opacity: 0, scale: .8 } }, "-=.2")
+			.from($("#AN_TXT"), 					.3, { css:{ opacity: 0, scale: .8 } }, "-=.2")
+		})
+	</script>
+	<script type="text/javascript" charset="utf-8" src="../shared/menu/menu.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/main.js"></script>
+</head>
+<body>
+	<div id="main">
+		<img id="BG" src="images/BG.png">
+		<div id="animate">
+			<img id="AN_BTN_INICIAR" src="images/AN_BTN_INICIAR.png" data-link-veeva="Disney_BR_pt_Disney_Talita_V1_02">
+			<img id="AN_LOGO" src="images/AN_LOGO.png">
+			<img id="AN_TXT" src="images/AN_TXT.png">
+		</div>
+		<div id="static"></div>
+		<div id="popups"></div>
+		<div id="menu"></div>
+		<div id="overlay"></div>
+	</div>
+</body>
+</html>

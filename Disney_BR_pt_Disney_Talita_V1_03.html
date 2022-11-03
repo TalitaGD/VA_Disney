@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Disney_BR_pt_Disney_Talita_V1_03</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../shared/menu/menu.css" rel="stylesheet" type="text/css"/>
+	<link href="../shared/css/style.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" charset="utf-8" src="../shared/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/jquery.gsap.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/TweenMax.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/veeva-library.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Initiate Menu
+			initMenu();
+
+			// Main Timeline
+			var tl = new TimelineMax();
+			tl.play()
+			.to($("#animate, #popups, #menu"), .3, { css:{ opacity: 1 } }, 0.3)
+			.from($("#AN_BTN_NEXT"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BTN_PREV"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_LEGENDAS"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BTN_POP"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BOX_SADNESS"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_SADNESS"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BTN_01"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BOX_TOY"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_TOY"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BTN_02"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BOX_VANELOPE"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_VANELOPE"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_BTN_03"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_LOGO"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+			.from($("#AN_TXT"), .3, { css:{ opacity: 0, left: "-=30" } }, "-=.2")
+
+			// Timeline Popup REF
+			var tl_pop_REF = new TimelineMax();
+			tl_pop_REF.pause()
+			.from($("#POP_REF_BG"), .3, { css: { display: "none", opacity: 0 } })
+			.from($("#POP_REF_CNTT"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_REF_BTN_CLS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+
+			$("#AN_BTN_POP").on("touchstart", function(){
+				tl_pop_REF.play().timeScale(1);
+			})
+			$("#POP_REF_BTN_CLS, #POP_REF_BG").on("touchstart", function(){
+				tl_pop_REF.reverse().timeScale(2);
+			})
+
+			// Timeline Popup SADNESS
+			var tl_pop_SADNESS = new TimelineMax();
+			tl_pop_SADNESS.pause()
+			.from($("#POP_SADNESS_BG"), .3, { css: { display: "none", opacity: 0 } })
+			.from($("#POP_SADNESS_AN_LOGO"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_TXT_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_LEGENDAS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_BTN_CLS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_TXT"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_LEGENDAS_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_SADNESS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_CENA_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_CENA_02"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_CENA_03"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_SADNESS_AN_LOGO_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+
+			$("#AN_BTN_01").on("touchstart", function(){
+				tl_pop_SADNESS.play().timeScale(1);
+			})
+			$("#POP_SADNESS_AN_BTN_CLS").on("touchstart", function(){
+				tl_pop_SADNESS.reverse().timeScale(2);
+			})
+
+			// Timeline Popup TOY
+			var tl_pop_TOY = new TimelineMax();
+			tl_pop_TOY.pause()
+			.from($("#POP_TOY_BG"), .3, { css: { display: "none", opacity: 0 } })
+			.from($("#POP_TOY_AN_LOGO"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_TXT_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_LEGENDAS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_BTN_CLS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_TXT"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_LEGENDAS_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_TOY"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_CENA_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_CENA_02"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_CENA_03"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_TOY_AN_LOGO_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+
+			$("#AN_BTN_02").on("touchstart", function(){
+				tl_pop_TOY.play().timeScale(1);
+			})
+			$("#POP_TOY_AN_BTN_CLS").on("touchstart", function(){
+				tl_pop_TOY.reverse().timeScale(2);
+			})
+
+			// Timeline Popup VANELOPE
+			var tl_pop_VANELOPE = new TimelineMax();
+			tl_pop_VANELOPE.pause()
+			.from($("#POP_VANELOPE_BG"), .3, { css: { display: "none", opacity: 0 } })
+			.from($("#POP_VANELOPE_AN_LOGO"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_TXT_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_LEGENDAS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_BTN_CLS"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_TXT"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_LEGENDAS_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_VANELOPE"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_LOGO_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_CENA_01"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+			.from($("#POP_VANELOPE_AN_CENA_02"), .3, { css: { display: "none", opacity: 0 } }, "-=.2")
+
+			$("#AN_BTN_03").on("touchstart", function(){
+				tl_pop_VANELOPE.play().timeScale(1);
+			})
+			$("#POP_VANELOPE_AN_BTN_CLS").on("touchstart", function(){
+				tl_pop_VANELOPE.reverse().timeScale(2);
+			})
+		})
+	</script>
+	<script type="text/javascript" charset="utf-8" src="../shared/menu/menu.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../shared/js/main.js"></script>
+</head>
+<body>
+	<div id="main">
+		<img id="BG" src="images/BG.png">
+		<div id="animate">
+			<img id="AN_BOX_SADNESS" src="images/AN_BOX_SADNESS.png">
+			<img id="AN_SADNESS" src="images/AN_SADNESS.png">
+			<img id="AN_BTN_01" src="images/AN_BTN_01.png">
+			<img id="AN_BOX_TOY" src="images/AN_BOX_TOY.png">
+			<img id="AN_TOY" src="images/AN_TOY.png">
+			<img id="AN_BTN_02" src="images/AN_BTN_02.png">
+			<img id="AN_BOX_VANELOPE" src="images/AN_BOX_VANELOPE.png">
+			<img id="AN_VANELOPE" src="images/AN_VANELOPE.png">
+			<img id="AN_BTN_03" src="images/AN_BTN_03.png">
+			<img id="AN_LOGO" src="images/AN_LOGO.png">
+			<img id="AN_TXT" src="images/AN_TXT.png">
+			<img id="AN_BTN_NEXT" src="images/AN_BTN_NEXT.png" data-link-veeva="Disney_BR_pt_Disney_Talita_V1_04">
+			<img id="AN_BTN_PREV" src="images/AN_BTN_PREV.png" data-link-veeva="Disney_BR_pt_Disney_Talita_V1_02">
+			<img id="AN_LEGENDAS" src="images/AN_LEGENDAS.png">
+			<img id="AN_BTN_POP" src="images/AN_BTN_POP.png">
+		</div>
+		<div id="static"></div>
+		<div id="popups">
+			<img id="POP_REF_BG" src="images/POP_REF_BG.png">
+			<img id="POP_REF_CNTT" src="images/POP_REF_CNTT.png">
+			<img id="POP_REF_BTN_CLS" src="images/POP_REF_BTN_CLS.png">
+			<img id="POP_SADNESS_BG" src="images/POP_SADNESS_BG.png">
+			<img id="POP_SADNESS_AN_LOGO" src="images/POP_SADNESS_AN_LOGO.png">
+			<img id="POP_SADNESS_AN_TXT_01" src="images/POP_SADNESS_AN_TXT_01.png">
+			<img id="POP_SADNESS_AN_LEGENDAS" src="images/POP_SADNESS_AN_LEGENDAS.png">
+			<img id="POP_SADNESS_AN_BTN_CLS" src="images/POP_SADNESS_AN_BTN_CLS.png">
+			<img id="POP_SADNESS_AN_TXT" src="images/POP_SADNESS_AN_TXT.png">
+			<img id="POP_SADNESS_AN_LEGENDAS_01" src="images/POP_SADNESS_AN_LEGENDAS_01.png">
+			<img id="POP_SADNESS_AN_SADNESS" src="images/POP_SADNESS_AN_SADNESS.png">
+			<img id="POP_SADNESS_AN_CENA_01" src="images/POP_SADNESS_AN_CENA_01.png">
+			<img id="POP_SADNESS_AN_CENA_02" src="images/POP_SADNESS_AN_CENA_02.png">
+			<img id="POP_SADNESS_AN_CENA_03" src="images/POP_SADNESS_AN_CENA_03.png">
+			<img id="POP_SADNESS_AN_LOGO_01" src="images/POP_SADNESS_AN_LOGO_01.png">
+			<img id="POP_TOY_BG" src="images/POP_TOY_BG.png">
+			<img id="POP_TOY_AN_LOGO" src="images/POP_TOY_AN_LOGO.png">
+			<img id="POP_TOY_AN_TXT_01" src="images/POP_TOY_AN_TXT_01.png">
+			<img id="POP_TOY_AN_LEGENDAS" src="images/POP_TOY_AN_LEGENDAS.png">
+			<img id="POP_TOY_AN_BTN_CLS" src="images/POP_TOY_AN_BTN_CLS.png">
+			<img id="POP_TOY_AN_TXT" src="images/POP_TOY_AN_TXT.png">
+			<img id="POP_TOY_AN_LEGENDAS_01" src="images/POP_TOY_AN_LEGENDAS_01.png">
+			<img id="POP_TOY_AN_TOY" src="images/POP_TOY_AN_TOY.png">
+			<img id="POP_TOY_AN_CENA_01" src="images/POP_TOY_AN_CENA_01.png">
+			<img id="POP_TOY_AN_CENA_02" src="images/POP_TOY_AN_CENA_02.png">
+			<img id="POP_TOY_AN_CENA_03" src="images/POP_TOY_AN_CENA_03.png">
+			<img id="POP_TOY_AN_LOGO_01" src="images/POP_TOY_AN_LOGO_01.png">
+			<img id="POP_VANELOPE_BG" src="images/POP_VANELOPE_BG.png">
+			<img id="POP_VANELOPE_AN_LOGO" src="images/POP_VANELOPE_AN_LOGO.png">
+			<img id="POP_VANELOPE_AN_TXT_01" src="images/POP_VANELOPE_AN_TXT_01.png">
+			<img id="POP_VANELOPE_AN_LEGENDAS" src="images/POP_VANELOPE_AN_LEGENDAS.png">
+			<img id="POP_VANELOPE_AN_BTN_CLS" src="images/POP_VANELOPE_AN_BTN_CLS.png">
+			<img id="POP_VANELOPE_AN_TXT" src="images/POP_VANELOPE_AN_TXT.png">
+			<img id="POP_VANELOPE_AN_LEGENDAS_01" src="images/POP_VANELOPE_AN_LEGENDAS_01.png">
+			<img id="POP_VANELOPE_AN_VANELOPE" src="images/POP_VANELOPE_AN_VANELOPE.png">
+			<img id="POP_VANELOPE_AN_LOGO_01" src="images/POP_VANELOPE_AN_LOGO_01.png">
+			<img id="POP_VANELOPE_AN_CENA_01" src="images/POP_VANELOPE_AN_CENA_01.png">
+			<img id="POP_VANELOPE_AN_CENA_02" src="images/POP_VANELOPE_AN_CENA_02.png">
+		</div>
+		<div id="menu"></div>
+		<div id="overlay"></div>
+	</div>
+</body>
+</html>
